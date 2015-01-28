@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="GENERATOR" content="lxr-1998-06-10: http://lxr.linux.no">
+<link rel="icon" href="/mxr.png" type="image/png">
+<title>seamonkey mozilla/modules/plugin/samples/npruntime/test.html</title>
+<link rel='stylesheet' title='' href='http://mxr.mozilla.org/seamonkey/style/style.css' type='text/css'>
+
+<script src='http://mxr.mozilla.org/coloration.js'></script>
+<script src='http://mxr.mozilla.org/script.js'></script>
+</head>
+
+<body   bgcolor="#FFFFFF" text="#000000"
+	link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<table class=banner bgcolor="#000000" width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr><td><a class="logo" href="//www.mozilla.org/"><img
+ src="//www.mozilla.org/images/mozilla-banner.gif" alt=""
+ border=0 width=600 height=58></a></td></tr></table>
+
+<table class=header border=0 cellpadding=12 cellspacing=0 width="100%">
+ <tr>
+  <td align=left valign=middle>
+   <nobr><font size="+2"><b><a href="http://mxr.mozilla.org">Mozilla Cross-Reference</a></b>
+</nobr><i><a href="http://mxr.mozilla.org/seamonkey">seamonkey</a></i>
+</font>
+   <br><b><a href="/seamonkey/source/">mozilla</a>/ <a href="/seamonkey/source/modules/">modules</a>/ <a href="/seamonkey/source/modules/plugin/">plugin</a>/ <a href="/seamonkey/source/modules/plugin/samples/">samples</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/">npruntime</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/test.html">test.html</a> </b>
+  </TD>
+
+  <td align=right valign=top width="1%">
+   <table border cellpadding=12 cellspacing=0>
+    <tr>
+     <td nowrap bgcolor="#FAFAFA">
+
+
+
+      <a href="http://bonsai.mozilla.org/cvslog.cgi?file=mozilla/modules/plugin/samples/npruntime/test.html&amp;rev=HEAD&amp;mark=1.1"
+>CVS Log</a><br>
+      <a href="http://bonsai.mozilla.org/cvsblame.cgi?file=mozilla/modules/plugin/samples/npruntime/test.html&amp;rev=1.1"
+onfocus='updateBonsaiBlameHash(this, event)'
+onmouseover='updateBonsaiBlameHash(this, event)'
+>CVS Blame</a><br>
+      <a href="http://bonsai.mozilla.org/cvsgraph.cgi?file=mozilla/modules/plugin/samples/npruntime/test.html&amp;rev=1.1"
+>CVS Graph</a><br>
+
+
+
+
+
+
+
+
+      <a href="http://mxr.mozilla.org/seamonkey/diff?file=/modules/plugin/samples/npruntime/test.html">Diff file</a><br>
+      <a href="http://mxr.mozilla.org/seamonkey/source/modules/plugin/samples/npruntime/test.html?raw=1">Raw file</a><br>
+     </TD>
+    </TR>
+   </table>
+  </TD>
+
+
+  <td align=right valign=top width="1%">
+   <table border cellpadding=6 cellspacing=0>
+    <tr>
+     <td bgcolor="#FAFAFA">
+      <table border=0 cellpadding=6 cellspacing=0>
+       <tr>
+        <td nowrap align=left>
+         changes to<br>this file in<br>the last:
+        </TD>
+        <td nowrap>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/test.html&amp;date=day">day</a><br>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/test.html&amp;date=week">week</a><br>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/test.html&amp;date=month">month</a><br>
+        </TD>
+       </TR>
+      </table>
+     </TD>
+    </TR>
+   </table>
+  </TD>
+
+
+ </TR>
+</table>
+
+<form name='source' id='source' class='beforecontent'
+>view using tree:
+<select name='tree' id='tree' onchange='changetarget("http://mxr.mozilla.org/seamonkey/", "seamonkey/")'>
+<option value="firefox">firefox</option>
+<option value="js">js</option>
+<option value="mozilla">mozilla</option>
+<option value="nspr-cvs">nspr-cvs</option>
+<option value="seamonkey" selected=1>seamonkey</option>
+<option value="security">security</option>
+
+</select></form>
+
+
+
+<pre lang='en'><style>.d2:before{content:' '} .d1:before{content:'  '} .d0:before{content:'   '} </style><span id='the-code'><a class='l d0' name=1 href="#1">1</a> &lt;HTML&gt;
+<a class='l d0' name=2 href="#2">2</a> &lt;HEAD&gt;
+<a class='l d0' name=3 href="#3">3</a> &lt;TITLE&gt;Scriptable Plug-in Test&lt;/TITLE&gt;
+<a class='l d0' name=4 href="#4">4</a> &lt;/HEAD&gt;
+<a class='l d0' name=5 href="#5">5</a> &lt;BODY id="bodyId"&gt;
+<a class='l d0' name=6 href="#6">6</a> 
+<a class='l d0' name=7 href="#7">7</a> &lt;center&gt;
+<a class='l d0' name=8 href="#8">8</a> &lt;h1&gt;Sample Scriptable Plug-in &lt;/h1&gt;
+<a class='l d0' name=9 href="#9">9</a> &lt;/center&gt;
+<a class='l d1' name=10 href="#10">10</a> 
+<a class='l d1' name=11 href="#11">11</a> This page contains a testcase which demonstrates the work of
+<a class='l d1' name=12 href="#12">12</a> scriptable 4.x style Navigator plug-in with Mozilla. The example
+<a class='l d1' name=13 href="#13">13</a> plug-in occupies the area right below this text, and you should see a
+<a class='l d1' name=14 href="#14">14</a> frame the plug-in draws around its window. Below the plug-in window
+<a class='l d1' name=15 href="#15">15</a> there are two buttons. Clicking on the buttons will result in calling
+<a class='l d1' name=16 href="#16">16</a> native plugin methods from JavaScript. Show Version will instruct the
+<a class='l d1' name=17 href="#17">17</a> plug-in to retrieve the Mozilla user agent string and display it in
+<a class='l d1' name=18 href="#18">18</a> the plug-in window, Clear button will call plug-in method to erase the
+<a class='l d1' name=19 href="#19">19</a> window.
+<a class='l d1' name=20 href="#20">20</a> 
+<a class='l d1' name=21 href="#21">21</a> &lt;br&gt;&lt;br&gt;
+<a class='l d1' name=22 href="#22">22</a> 
+<a class='l d1' name=23 href="#23">23</a> &lt;center&gt;
+<a class='l d1' name=24 href="#24">24</a> 
+<a class='l d1' name=25 href="#25">25</a> &lt;script&gt;
+<a class='l d1' name=26 href="#26">26</a> function bar(arg)
+<a class='l d1' name=27 href="#27">27</a> {
+<a class='l d1' name=28 href="#28">28</a>   document.getElementById("result").innerHTML += "&lt;p&gt;" + "function bar(" + arg + ") called!" + "&lt;/p&gt;";
+<a class='l d1' name=29 href="#29">29</a> 
+<a class='l d1' name=30 href="#30">30</a>   return 4;
+<a class='l d1' name=31 href="#31">31</a> }
+<a class='l d1' name=32 href="#32">32</a> &lt;/script&gt;
+<a class='l d1' name=33 href="#33">33</a> 
+<a class='l d1' name=34 href="#34">34</a> &lt;div id="result"&gt;
+<a class='l d1' name=35 href="#35">35</a> &lt;p&gt;results go here:&lt;/p&gt;
+<a class='l d1' name=36 href="#36">36</a> &lt;/div&gt;
+<a class='l d1' name=37 href="#37">37</a> 
+<a class='l d1' name=38 href="#38">38</a> &lt;embed id="embed1" type="application/mozilla-npruntime-scriptable-plugin" width=600 height=40&gt;&lt;br&gt;
+<a class='l d1' name=39 href="#39">39</a> 
+<a class='l d1' name=40 href="#40">40</a> &lt;embed type="application/x-java-mozilla-npruntime-scriptable-plugin" style="display: block; width: 50%; height: 100px;"&gt;&lt;br&gt;
+<a class='l d1' name=41 href="#41">41</a> 
+<a class='l d1' name=42 href="#42">42</a> &lt;script&gt;
+<a class='l d1' name=43 href="#43">43</a> var embed1 = document.getElementById('embed1');
+<a class='l d1' name=44 href="#44">44</a> &lt;/script&gt;
+<a class='l d1' name=45 href="#45">45</a> 
+<a class='l d1' name=46 href="#46">46</a> &lt;br&gt;
+<a class='l d1' name=47 href="#47">47</a> &lt;form name="formname"&gt;
+<a class='l d1' name=48 href="#48">48</a> &lt;input type=button value="Call pluginobj.foo()" onclick='alert(pluginobj.foo())'&gt;
+<a class='l d1' name=49 href="#49">49</a> &lt;input type=button value="alert(pluginobj.bar)" onclick='alert(pluginobj.bar)'&gt;
+<a class='l d1' name=50 href="#50">50</a> &lt;input type=button value="alert(pluginobj('foo'))" onclick='alert(pluginobj("foo"))'&gt;
+<a class='l d1' name=51 href="#51">51</a> &lt;br&gt;
+<a class='l d1' name=52 href="#52">52</a> &lt;input type=button value="alert(embed1.bar)" onclick='alert(embed1.bar)'&gt;
+<a class='l d1' name=53 href="#53">53</a> &lt;input type=button value="alert(embed1.foo())" onclick='alert(embed1.foo())'&gt;
+<a class='l d1' name=54 href="#54">54</a> &lt;input type=button value="alert(embed1())" onclick='alert(embed1())'&gt;
+<a class='l d1' name=55 href="#55">55</a> &lt;input type=button value="embed1.bar='foo'" onclick='embed1.bar="foo";'&gt;
+<a class='l d1' name=56 href="#56">56</a> &lt;/form&gt;
+<a class='l d1' name=57 href="#57">57</a> 
+<a class='l d1' name=58 href="#58">58</a> &lt;/center&gt;
+<a class='l d1' name=59 href="#59">59</a> 
+<a class='l d1' name=60 href="#60">60</a> &lt;/BODY&gt;
+<a class='l d1' name=61 href="#61">61</a> &lt;/HTML&gt;
+</span></pre>
+</html>

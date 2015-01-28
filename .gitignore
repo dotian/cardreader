@@ -2,6 +2,8 @@
 
 **/bin/*
 
+*/Debug/**/*
+
 */*.user
 
 *.suo

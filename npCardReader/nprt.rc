@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="GENERATOR" content="lxr-1998-06-10: http://lxr.linux.no">
+<link rel="icon" href="/mxr.png" type="image/png">
+<title>seamonkey mozilla/modules/plugin/samples/npruntime/nprt.rc</title>
+<link rel='stylesheet' title='' href='http://mxr.mozilla.org/seamonkey/style/style.css' type='text/css'>
+
+<script src='http://mxr.mozilla.org/coloration.js'></script>
+<script src='http://mxr.mozilla.org/script.js'></script>
+</head>
+
+<body   bgcolor="#FFFFFF" text="#000000"
+	link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<table class=banner bgcolor="#000000" width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr><td><a class="logo" href="//www.mozilla.org/"><img
+ src="//www.mozilla.org/images/mozilla-banner.gif" alt=""
+ border=0 width=600 height=58></a></td></tr></table>
+
+<table class=header border=0 cellpadding=12 cellspacing=0 width="100%">
+ <tr>
+  <td align=left valign=middle>
+   <nobr><font size="+2"><b><a href="http://mxr.mozilla.org">Mozilla Cross-Reference</a></b>
+</nobr><i><a href="http://mxr.mozilla.org/seamonkey">seamonkey</a></i>
+</font>
+   <br><b><a href="/seamonkey/source/">mozilla</a>/ <a href="/seamonkey/source/modules/">modules</a>/ <a href="/seamonkey/source/modules/plugin/">plugin</a>/ <a href="/seamonkey/source/modules/plugin/samples/">samples</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/">npruntime</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/nprt.rc">nprt.rc</a> </b>
+  </TD>
+
+  <td align=right valign=top width="1%">
+   <table border cellpadding=12 cellspacing=0>
+    <tr>
+     <td nowrap bgcolor="#FAFAFA">
+
+
+
+      <a href="http://bonsai.mozilla.org/cvslog.cgi?file=mozilla/modules/plugin/samples/npruntime/nprt.rc&amp;rev=HEAD&amp;mark=1.1"
+>CVS Log</a><br>
+      <a href="http://bonsai.mozilla.org/cvsblame.cgi?file=mozilla/modules/plugin/samples/npruntime/nprt.rc&amp;rev=1.1"
+onfocus='updateBonsaiBlameHash(this, event)'
+onmouseover='updateBonsaiBlameHash(this, event)'
+>CVS Blame</a><br>
+      <a href="http://bonsai.mozilla.org/cvsgraph.cgi?file=mozilla/modules/plugin/samples/npruntime/nprt.rc&amp;rev=1.1"
+>CVS Graph</a><br>
+
+
+
+
+
+
+
+
+      <a href="http://mxr.mozilla.org/seamonkey/diff?file=/modules/plugin/samples/npruntime/nprt.rc">Diff file</a><br>
+      <a href="http://mxr.mozilla.org/seamonkey/source/modules/plugin/samples/npruntime/nprt.rc?raw=1">Raw file</a><br>
+     </TD>
+    </TR>
+   </table>
+  </TD>
+
+
+  <td align=right valign=top width="1%">
+   <table border cellpadding=6 cellspacing=0>
+    <tr>
+     <td bgcolor="#FAFAFA">
+      <table border=0 cellpadding=6 cellspacing=0>
+       <tr>
+        <td nowrap align=left>
+         changes to<br>this file in<br>the last:
+        </TD>
+        <td nowrap>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/nprt.rc&amp;date=day">day</a><br>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/nprt.rc&amp;date=week">week</a><br>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/nprt.rc&amp;date=month">month</a><br>
+        </TD>
+       </TR>
+      </table>
+     </TD>
+    </TR>
+   </table>
+  </TD>
+
+
+ </TR>
+</table>
+
+<form name='source' id='source' class='beforecontent'
+>view using tree:
+<select name='tree' id='tree' onchange='changetarget("http://mxr.mozilla.org/seamonkey/", "seamonkey/")'>
+<option value="firefox">firefox</option>
+<option value="js">js</option>
+<option value="mozilla">mozilla</option>
+<option value="nspr-cvs">nspr-cvs</option>
+<option value="seamonkey" selected=1>seamonkey</option>
+<option value="security">security</option>
+
+</select></form>
+
+
+
+<pre lang='en'><style>.d2:before{content:' '} .d1:before{content:'  '} .d0:before{content:'   '} </style><span id='the-code'><a class='l d0' name=1 href="#1">1</a> //Microsoft Developer Studio generated resource script.
+<a class='l d0' name=2 href="#2">2</a> //
+<a class='l d0' name=3 href="#3">3</a> #include "resource.h"
+<a class='l d0' name=4 href="#4">4</a> 
+<a class='l d0' name=5 href="#5">5</a> #define APSTUDIO_READONLY_SYMBOLS
+<a class='l d0' name=6 href="#6">6</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d0' name=7 href="#7">7</a> //
+<a class='l d0' name=8 href="#8">8</a> // Generated from the TEXTINCLUDE 2 resource.
+<a class='l d0' name=9 href="#9">9</a> //
+<a class='l d1' name=10 href="#10">10</a> #include "afxres.h"
+<a class='l d1' name=11 href="#11">11</a> 
+<a class='l d1' name=12 href="#12">12</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d1' name=13 href="#13">13</a> #undef APSTUDIO_READONLY_SYMBOLS
+<a class='l d1' name=14 href="#14">14</a> 
+<a class='l d1' name=15 href="#15">15</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d1' name=16 href="#16">16</a> // English (U.S.) resources
+<a class='l d1' name=17 href="#17">17</a> 
+<a class='l d1' name=18 href="#18">18</a> #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+<a class='l d1' name=19 href="#19">19</a> #ifdef _WIN32
+<a class='l d1' name=20 href="#20">20</a> LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+<a class='l d1' name=21 href="#21">21</a> #pragma code_page(1252)
+<a class='l d1' name=22 href="#22">22</a> #endif //_WIN32
+<a class='l d1' name=23 href="#23">23</a> 
+<a class='l d1' name=24 href="#24">24</a> #ifndef _MAC
+<a class='l d1' name=25 href="#25">25</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d1' name=26 href="#26">26</a> //
+<a class='l d1' name=27 href="#27">27</a> // Version
+<a class='l d1' name=28 href="#28">28</a> //
+<a class='l d1' name=29 href="#29">29</a> 
+<a class='l d1' name=30 href="#30">30</a> VS_VERSION_INFO VERSIONINFO
+<a class='l d1' name=31 href="#31">31</a>  FILEVERSION 1,0,0,1
+<a class='l d1' name=32 href="#32">32</a>  PRODUCTVERSION 1,0,0,1
+<a class='l d1' name=33 href="#33">33</a>  FILEFLAGSMASK 0x3fL
+<a class='l d1' name=34 href="#34">34</a> #ifdef _DEBUG
+<a class='l d1' name=35 href="#35">35</a>  FILEFLAGS 0x1L
+<a class='l d1' name=36 href="#36">36</a> #else
+<a class='l d1' name=37 href="#37">37</a>  FILEFLAGS 0x0L
+<a class='l d1' name=38 href="#38">38</a> #endif
+<a class='l d1' name=39 href="#39">39</a>  FILEOS 0x40004L
+<a class='l d1' name=40 href="#40">40</a>  FILETYPE 0x2L
+<a class='l d1' name=41 href="#41">41</a>  FILESUBTYPE 0x0L
+<a class='l d1' name=42 href="#42">42</a> BEGIN
+<a class='l d1' name=43 href="#43">43</a>     BLOCK "StringFileInfo"
+<a class='l d1' name=44 href="#44">44</a>     BEGIN
+<a class='l d1' name=45 href="#45">45</a>         BLOCK "040904e4"
+<a class='l d1' name=46 href="#46">46</a>         BEGIN
+<a class='l d1' name=47 href="#47">47</a>             VALUE "Comments", "\0"
+<a class='l d1' name=48 href="#48">48</a>             VALUE "CompanyName", " \0"
+<a class='l d1' name=49 href="#49">49</a>             VALUE "FileDescription", "nprt\0"
+<a class='l d1' name=50 href="#50">50</a>             VALUE "FileExtents", "rts\0"
+<a class='l d1' name=51 href="#51">51</a>             VALUE "FileOpenName", "nprt\0"
+<a class='l d1' name=52 href="#52">52</a>             VALUE "FileVersion", "1, 0, 0, 1\0"
+<a class='l d1' name=53 href="#53">53</a>             VALUE "InternalName", "nprt\0"
+<a class='l d1' name=54 href="#54">54</a>             VALUE "LegalCopyright", "Copyright © 1999\0"
+<a class='l d1' name=55 href="#55">55</a>             VALUE "LegalTrademarks", "\0"
+<a class='l d1' name=56 href="#56">56</a>             VALUE "MIMEType", "application/mozilla-npruntime-scriptable-plugin\0"
+<a class='l d1' name=57 href="#57">57</a>             VALUE "OriginalFilename", "nprt.dll\0"
+<a class='l d1' name=58 href="#58">58</a>             VALUE "PrivateBuild", "\0"
+<a class='l d1' name=59 href="#59">59</a>             VALUE "ProductName", "npruntime scriptable example plugin\0"
+<a class='l d1' name=60 href="#60">60</a>             VALUE "ProductVersion", "1, 0, 0, 1\0"
+<a class='l d1' name=61 href="#61">61</a>             VALUE "SpecialBuild", "\0"
+<a class='l d1' name=62 href="#62">62</a>         END
+<a class='l d1' name=63 href="#63">63</a>     END
+<a class='l d1' name=64 href="#64">64</a>     BLOCK "VarFileInfo"
+<a class='l d1' name=65 href="#65">65</a>     BEGIN
+<a class='l d1' name=66 href="#66">66</a>         VALUE "Translation", 0x409, 1252
+<a class='l d1' name=67 href="#67">67</a>     END
+<a class='l d1' name=68 href="#68">68</a> END
+<a class='l d1' name=69 href="#69">69</a> 
+<a class='l d1' name=70 href="#70">70</a> #endif    // !_MAC
+<a class='l d1' name=71 href="#71">71</a> 
+<a class='l d1' name=72 href="#72">72</a> 
+<a class='l d1' name=73 href="#73">73</a> #ifdef APSTUDIO_INVOKED
+<a class='l d1' name=74 href="#74">74</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d1' name=75 href="#75">75</a> //
+<a class='l d1' name=76 href="#76">76</a> // TEXTINCLUDE
+<a class='l d1' name=77 href="#77">77</a> //
+<a class='l d1' name=78 href="#78">78</a> 
+<a class='l d1' name=79 href="#79">79</a> 1 TEXTINCLUDE DISCARDABLE 
+<a class='l d1' name=80 href="#80">80</a> BEGIN
+<a class='l d1' name=81 href="#81">81</a>     "resource.h\0"
+<a class='l d1' name=82 href="#82">82</a> END
+<a class='l d1' name=83 href="#83">83</a> 
+<a class='l d1' name=84 href="#84">84</a> 2 TEXTINCLUDE DISCARDABLE 
+<a class='l d1' name=85 href="#85">85</a> BEGIN
+<a class='l d1' name=86 href="#86">86</a>     "#include ""afxres.h""\r\n"
+<a class='l d1' name=87 href="#87">87</a>     "\0"
+<a class='l d1' name=88 href="#88">88</a> END
+<a class='l d1' name=89 href="#89">89</a> 
+<a class='l d1' name=90 href="#90">90</a> 3 TEXTINCLUDE DISCARDABLE 
+<a class='l d1' name=91 href="#91">91</a> BEGIN
+<a class='l d1' name=92 href="#92">92</a>     "\r\n"
+<a class='l d1' name=93 href="#93">93</a>     "\0"
+<a class='l d1' name=94 href="#94">94</a> END
+<a class='l d1' name=95 href="#95">95</a> 
+<a class='l d1' name=96 href="#96">96</a> #endif    // APSTUDIO_INVOKED
+<a class='l d1' name=97 href="#97">97</a> 
+<a class='l d1' name=98 href="#98">98</a> #endif    // English (U.S.) resources
+<a class='l d1' name=99 href="#99">99</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d2' name=100 href="#100">100</a> 
+<a class='l d2' name=101 href="#101">101</a> 
+<a class='l d2' name=102 href="#102">102</a> 
+<a class='l d2' name=103 href="#103">103</a> #ifndef APSTUDIO_INVOKED
+<a class='l d2' name=104 href="#104">104</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d2' name=105 href="#105">105</a> //
+<a class='l d2' name=106 href="#106">106</a> // Generated from the TEXTINCLUDE 3 resource.
+<a class='l d2' name=107 href="#107">107</a> //
+<a class='l d2' name=108 href="#108">108</a> 
+<a class='l d2' name=109 href="#109">109</a> 
+<a class='l d2' name=110 href="#110">110</a> /////////////////////////////////////////////////////////////////////////////
+<a class='l d2' name=111 href="#111">111</a> #endif    // not APSTUDIO_INVOKED
+<a class='l d2' name=112 href="#112">112</a> 
+</span></pre>
+</html>

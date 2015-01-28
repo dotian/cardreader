@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="GENERATOR" content="lxr-1998-06-10: http://lxr.linux.no">
+<link rel="icon" href="/mxr.png" type="image/png">
+<title>seamonkey mozilla/modules/plugin/samples/npruntime/Makefile.in</title>
+<link rel='stylesheet' title='' href='http://mxr.mozilla.org/seamonkey/style/style.css' type='text/css'>
+
+<script src='http://mxr.mozilla.org/coloration.js'></script>
+<script src='http://mxr.mozilla.org/script.js'></script>
+</head>
+
+<body   bgcolor="#FFFFFF" text="#000000"
+	link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<table class=banner bgcolor="#000000" width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr><td><a class="logo" href="//www.mozilla.org/"><img
+ src="//www.mozilla.org/images/mozilla-banner.gif" alt=""
+ border=0 width=600 height=58></a></td></tr></table>
+
+<table class=header border=0 cellpadding=12 cellspacing=0 width="100%">
+ <tr>
+  <td align=left valign=middle>
+   <nobr><font size="+2"><b><a href="http://mxr.mozilla.org">Mozilla Cross-Reference</a></b>
+</nobr><i><a href="http://mxr.mozilla.org/seamonkey">seamonkey</a></i>
+</font>
+   <br><b><a href="/seamonkey/source/">mozilla</a>/ <a href="/seamonkey/source/modules/">modules</a>/ <a href="/seamonkey/source/modules/plugin/">plugin</a>/ <a href="/seamonkey/source/modules/plugin/samples/">samples</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/">npruntime</a>/ <a href="/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in">Makefile.in</a> </b>
+  </TD>
+
+  <td align=right valign=top width="1%">
+   <table border cellpadding=12 cellspacing=0>
+    <tr>
+     <td nowrap bgcolor="#FAFAFA">
+
+
+
+      <a href="http://bonsai.mozilla.org/cvslog.cgi?file=mozilla/modules/plugin/samples/npruntime/Makefile.in&amp;rev=HEAD&amp;mark=1.1"
+>CVS Log</a><br>
+      <a href="http://bonsai.mozilla.org/cvsblame.cgi?file=mozilla/modules/plugin/samples/npruntime/Makefile.in&amp;rev=1.1"
+onfocus='updateBonsaiBlameHash(this, event)'
+onmouseover='updateBonsaiBlameHash(this, event)'
+>CVS Blame</a><br>
+      <a href="http://bonsai.mozilla.org/cvsgraph.cgi?file=mozilla/modules/plugin/samples/npruntime/Makefile.in&amp;rev=1.1"
+>CVS Graph</a><br>
+
+
+
+
+
+
+
+
+      <a href="http://mxr.mozilla.org/seamonkey/diff?file=/modules/plugin/samples/npruntime/Makefile.in">Diff file</a><br>
+      <a href="http://mxr.mozilla.org/seamonkey/source/modules/plugin/samples/npruntime/Makefile.in?raw=1">Raw file</a><br>
+     </TD>
+    </TR>
+   </table>
+  </TD>
+
+
+  <td align=right valign=top width="1%">
+   <table border cellpadding=6 cellspacing=0>
+    <tr>
+     <td bgcolor="#FAFAFA">
+      <table border=0 cellpadding=6 cellspacing=0>
+       <tr>
+        <td nowrap align=left>
+         changes to<br>this file in<br>the last:
+        </TD>
+        <td nowrap>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/Makefile.in&amp;date=day">day</a><br>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/Makefile.in&amp;date=week">week</a><br>
+         <a href="http://bonsai.mozilla.org/cvsquery.cgi?branch=HEAD&amp;file=mozilla/modules/plugin/samples/npruntime/Makefile.in&amp;date=month">month</a><br>
+        </TD>
+       </TR>
+      </table>
+     </TD>
+    </TR>
+   </table>
+  </TD>
+
+
+ </TR>
+</table>
+
+<form name='source' id='source' class='beforecontent'
+>view using tree:
+<select name='tree' id='tree' onchange='changetarget("http://mxr.mozilla.org/seamonkey/", "seamonkey/")'>
+<option value="firefox">firefox</option>
+<option value="js">js</option>
+<option value="mozilla">mozilla</option>
+<option value="nspr-cvs">nspr-cvs</option>
+<option value="seamonkey" selected=1>seamonkey</option>
+<option value="security">security</option>
+
+</select></form>
+
+
+
+<pre lang='en'><script>window.use_js_coloration = true;
+window.ident_cgi='/seamonkey/ident';
+</script><noscript>Script has been disabled, please reload the page to see the scriptless version.</noscript><style>.d2:before{content:' '} .d1:before{content:'  '} .d0:before{content:'   '} </style><span id='the-code'><a class='l d0' name=1 href="#1">1</a> ############################################################################
+<a class='l d0' name=2 href="#2">2</a> ## Makefile.in (Generic SANE Plugin Tree)
+<a class='l d0' name=3 href="#3">3</a> ##
+<a class='l d0' name=4 href="#4">4</a> ## The contents of this file are subject to the Mozilla Public
+<a class='l d0' name=5 href="#5">5</a> ## License Version 1.1 (the "License"); you may not use this file
+<a class='l d0' name=6 href="#6">6</a> ## except in compliance with the License. You may obtain a copy of
+<a class='l d0' name=7 href="#7">7</a> ## the License at <a href="http://www.mozilla.org/MPL/">http://www.mozilla.org/MPL/</a>
+<a class='l d0' name=8 href="#8">8</a> ##
+<a class='l d0' name=9 href="#9">9</a> ## Software distributed under the License is distributed on an "AS
+<a class='l d1' name=10 href="#10">10</a> ## IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+<a class='l d1' name=11 href="#11">11</a> ## implied. See the License for the specific language governing
+<a class='l d1' name=12 href="#12">12</a> ## rights and limitations under the License.
+<a class='l d1' name=13 href="#13">13</a> ## Contributor(s): 
+<a class='l d1' name=14 href="#14">14</a> ##
+<a class='l d1' name=15 href="#15">15</a> ##   Rusty Lynch &lt;rusty.lynch@intel.com&gt;
+<a class='l d1' name=16 href="#16">16</a> ############################################################################
+<a class='l d1' name=17 href="#17">17</a> 
+<a class='l d1' name=18 href="#18">18</a> DEPTH		= ../../../..
+<a class='l d1' name=19 href="#19">19</a> topsrcdir	= @top_srcdir@
+<a class='l d1' name=20 href="#20">20</a> srcdir		= @srcdir@
+<a class='l d1' name=21 href="#21">21</a> VPATH		= @srcdir@
+<a class='l d1' name=22 href="#22">22</a> 
+<a class='l d1' name=23 href="#23">23</a> include $(DEPTH)/config/autoconf.mk
+<a class='l d1' name=24 href="#24">24</a> 
+<a class='l d1' name=25 href="#25">25</a> MODULE		= plugin
+<a class='l d1' name=26 href="#26">26</a> LIBRARY_NAME	= nprt
+<a class='l d1' name=27 href="#27">27</a> ifeq ($(OS_ARCH),WINNT)
+<a class='l d1' name=28 href="#28">28</a> RESFILE		= nprt.res
+<a class='l d1' name=29 href="#29">29</a> DEFFILE		= $(srcdir)/nprt.def
+<a class='l d1' name=30 href="#30">30</a> endif
+<a class='l d1' name=31 href="#31">31</a> 
+<a class='l d1' name=32 href="#32">32</a> # plugins should always be shared, even in the "static" build
+<a class='l d1' name=33 href="#33">33</a> FORCE_SHARED_LIB = 1
+<a class='l d1' name=34 href="#34">34</a> 
+<a class='l d1' name=35 href="#35">35</a> # Force use of PIC
+<a class='l d1' name=36 href="#36">36</a> FORCE_USE_PIC	= 1
+<a class='l d1' name=37 href="#37">37</a> 
+<a class='l d1' name=38 href="#38">38</a> NO_DIST_INSTALL	= 1
+<a class='l d1' name=39 href="#39">39</a> NO_INSTALL = 1
+<a class='l d1' name=40 href="#40">40</a> 
+<a class='l d1' name=41 href="#41">41</a> CPPSRCS = \
+<a class='l d1' name=42 href="#42">42</a> 	np_entry.cpp		\
+<a class='l d1' name=43 href="#43">43</a> 	npn_gate.cpp		\
+<a class='l d1' name=44 href="#44">44</a> 	npp_gate.cpp		\
+<a class='l d1' name=45 href="#45">45</a> 	plugin.cpp		\
+<a class='l d1' name=46 href="#46">46</a> 	$(NULL)
+<a class='l d1' name=47 href="#47">47</a> 
+<a class='l d1' name=48 href="#48">48</a> REQUIRES = \
+<a class='l d1' name=49 href="#49">49</a> 		plugin		\
+<a class='l d1' name=50 href="#50">50</a> 		java		\
+<a class='l d1' name=51 href="#51">51</a> 		$(NULL)
+<a class='l d1' name=52 href="#52">52</a> 
+<a class='l d1' name=53 href="#53">53</a> LOCAL_INCLUDES  = -I$(srcdir)/.. -I$(srcdir)/../../public \
+<a class='l d1' name=54 href="#54">54</a> 		  -I/usr/lib/glib/include 
+<a class='l d1' name=55 href="#55">55</a> 
+<a class='l d1' name=56 href="#56">56</a> include $(topsrcdir)/config/rules.mk
+<a class='l d1' name=57 href="#57">57</a> 
+<a class='l d1' name=58 href="#58">58</a> install-plugin: $(SHARED_LIBRARY)
+<a class='l d1' name=59 href="#59">59</a> ifdef SHARED_LIBRARY
+<a class='l d1' name=60 href="#60">60</a> 	$(INSTALL) $(SHARED_LIBRARY) $(DIST)/bin/plugins
+<a class='l d1' name=61 href="#61">61</a> endif
+<a class='l d1' name=62 href="#62">62</a> 
+<a class='l d1' name=63 href="#63">63</a> libs:: install-plugin
+<a class='l d1' name=64 href="#64">64</a> 
+<a class='l d1' name=65 href="#65">65</a> install:: $(SHARED_LIBRARY)
+<a class='l d1' name=66 href="#66">66</a> ifdef SHARED_LIBRARY
+<a class='l d1' name=67 href="#67">67</a> 	$(SYSINSTALL) $(IFLAGS2) $&lt; $(DESTDIR)$(mozappdir)/plugins
+<a class='l d1' name=68 href="#68">68</a> endif
+</span></pre>
+</html>

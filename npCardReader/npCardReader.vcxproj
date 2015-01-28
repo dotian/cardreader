@@ -10,10 +10,29 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="plugin.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="npn_gate.cpp" />
+    <ClCompile Include="npp_gate.cpp" />
+    <ClCompile Include="np_entry.cpp" />
+    <ClCompile Include="plugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nprt.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile.in" />
+    <None Include="npcr.def" />
+    <None Include="test.html" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{401DF4A6-B187-448C-86E5-3061A368C392}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>npCardReader</RootNamespace>
+    <ProjectName>npcr</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,8 +94,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
